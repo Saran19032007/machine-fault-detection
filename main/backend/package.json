@@ -1,0 +1,26 @@
+{
+  "name": "mfd-backend",
+  "version": "1.0.0",
+  "description": "Backend API for the IoT Machine Fault Detection / Predictive Maintenance system",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "json2csv": "^6.0.0-alpha.2",
+    "mongoose": "^8.7.0",
+    "socket.io": "^4.8.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
+    "supertest": "^7.0.0"
+  }
+}

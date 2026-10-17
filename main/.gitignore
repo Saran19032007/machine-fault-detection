@@ -1,0 +1,37 @@
+# Environment files (never commit secrets)
+.env
+.env.local
+**/.env
+!**/.env.example
+
+# Node
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+
+# ML artifacts (trained locally via train.py — not committed)
+ml-service/models/*.pkl
+ml-service/models/model_metadata.json
+
+# MongoDB local data
+mongodb-data/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Test coverage
+coverage/
